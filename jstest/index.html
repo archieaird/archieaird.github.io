@@ -5,11 +5,13 @@
   </head>
   <body>
     <button id="testAlert">Test Alert</button>
+    <button id="testRedirect">Test Redirect</button>
     <script>
       function ael(id,type,clbk) {
         document.getElementById(id).addEventListener(type, clbk)
       }
       ael("testAlert", "click", () => {alert("It works!")})
+      ael("testRedirect", "click", () => {window.location.replace("itWorks.html")})
     </script>
   </body>
 </html>
