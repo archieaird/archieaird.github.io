@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Test</title>
+  </head>
+  <body>
+    <button id="testAlert">Test Alert</button>
+    <script>
+      function ael(id,type,clbk) {
+        document.getElementById(id).addEventListener(type, clbk)
+      }
+      ael("testAlert", "click", () => {alert("It works!")})
+    </script>
+  </body>
+</html>
